@@ -1,20 +1,20 @@
 variable "cluster_name" {
-  type = string
+  type    = string
   default = "my-eks-cluster"
 }
 
 variable "cluster_version" {
-  type = number
+  type    = number
   default = 1.25
 }
 
 variable "region" {
-  type = string
+  type    = string
   default = "us-west-2"
 }
 
 variable "availability_zones" {
-  type = list
+  type    = list(any)
   default = ["us-west-2a", "us-west-2b"]
 }
 

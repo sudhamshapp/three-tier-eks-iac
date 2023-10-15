@@ -1,5 +1,5 @@
 module "eks" {
-  source  = "terraform-aws-modules/eks/aws"
+  source  = "terraform-aws-modules/eks/aws" # already resources are available on internet, there is no need of reinventing the wheel
   version = "18.29.0"
 
   cluster_name    = var.cluster_name

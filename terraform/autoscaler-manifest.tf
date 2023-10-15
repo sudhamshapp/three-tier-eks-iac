@@ -1,3 +1,4 @@
+# As per the demand it scale out/in the instances 
 provider "kubectl" {
   host                   = data.aws_eks_cluster.default.endpoint
   cluster_ca_certificate = base64decode(data.aws_eks_cluster.default.certificate_authority[0].data)
